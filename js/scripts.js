@@ -36,7 +36,7 @@ $(function() {
     var newPizza = new Pizza(size, toppings);
 
     $(".total").fadeIn(300);
-    $("#total-price").text(newPizza);
+    $("#total-price").text(newPizza.price());
 
   });
 });
