@@ -24,9 +24,12 @@ Specifications:
 -Each pizza topping corresponds to a specific price
   -Input: pepperoni
   -Output: $2.00
+-Once user selects all of their toppings, they will be added up for a topping price total
+  -Input: pepperoni, olives
+  -Output: $3.00
 -Based on the number of toppings and size of pizza, users will be charged a specific price for their pizza
   -Input: medium; pepperoni, olives
-  -Output: $20.00
+  -Output: $19.00
 
 ## Setup/Installation Requirements
 
