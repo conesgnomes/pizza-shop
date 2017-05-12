@@ -1,12 +1,13 @@
 // Business Logic
 
-function Pizza(size, toppings) {
+function Pizza(size, sauce, toppings) {
   this.size = size;
+  this.sauce = sauce;
   this.toppings = toppings;
 }
 
 Pizza.prototype.price = function() {
-  var total = this.size + this.toppings;
+  var total = this.size + this.sauce + this.toppings;
   return total;
 }
 
@@ -22,7 +23,7 @@ $(function() {
     debugger;
     var toppings = 0;
     var size = parseInt($("input:radio[name=size]:checked").val());
-
+    var sauce = parseInt($("input:radio[name=sauce]:checked").val());
     var meat = $("input:checkbox[name=meat]:checked").each(function() {
       var meatToppings = parseInt($(this).val());
       toppings += meatToppings;
@@ -33,7 +34,7 @@ $(function() {
       return toppings
     });
 
-    var newPizza = new Pizza(size, toppings);
+    var newPizza = new Pizza(size, sauce, toppings);
 
     $(".total").fadeIn(300);
     $("#total-price").text(newPizza.price());

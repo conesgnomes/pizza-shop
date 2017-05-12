@@ -1,3 +1,121 @@
 .toppings, .total {
-  display: none;
+  /*display: none;*/
+}
+
+body {
+  background-color: #f5f1e5;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-family: 'Sacramento', cursive;
+  padding-left: 5%;
+  margin-top: 0;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: rgba(255,255,255, 0.7);
+}
+
+h2 {
+  font-family: 'Arvo', serif;
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  padding-top: 30%;
+  padding-bottom: 5%;
+  color: white;
+}
+
+.head {
+  background-image: url("../img/oven.jpg");
+  background-position:center;
+  background-size: cover;
+
+}
+
+h4 {
+  font-family: 'Sacramento', cursive;
+  font-size: 2em;
+  /*text-decoration: underline;*/
+}
+
+h3, h5 {
+  font-weight: 600;
+}
+
+.order-header {
+  margin-left: 5%;
+  padding: 5% 0;
+}
+
+.order {
+  margin-left: 8%;
+}
+
+.size {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.pizza-size {
+  display: inline-block;
+  text-align: center;
+  margin-right: 5%;
+}
+
+.pizza-size label {
+  display: block;
+}
+
+#personal {
+  display: flex;
+  justify-content: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 35px;
+  border: black solid 2px;
+}
+
+#personal p {
+  margin-top: 20%;
+}
+
+#medium {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: black solid 2px;
+}
+
+#medium p {
+  margin-top: 25%;
+}
+
+#large {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 60px;
+  border: black solid 2px;
+}
+
+#large p {
+  margin-top: 30%;
+}
+
+#x-large {
+  display: flex;
+  justify-content: center;
+  height: 75px;
+  width: 75px;
+  border-radius: 75px;
+  border: black solid 2px;
+}
+
+#x-large p {
+  margin-top: 35%;
 }
