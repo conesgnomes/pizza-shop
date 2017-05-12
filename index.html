@@ -3,95 +3,96 @@
   <head>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Raleway:100,200,400,600|Sacramento" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Arvo:400,700|Raleway:100,200,400,600|Sacramento" rel="stylesheet">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
     <meta charset="utf-8">
-    <title>Con's Pizza</title>
+    <title>Con's Trattoria</title>
   </head>
   <body>
     <div class="head">
       <h1>Con's Trattoria</h1>
-      <h2 id="subtitle">Artisan Pizza and Libations</h2>
+      <h2 id="subtitle">Artisan Pizza&nbsp;&amp;&nbsp;Libations</h2>
     </div>
-    <h3 class="order-header">Online Ordering</h3>
-    <div class="order">
-      <h4>First, select a size...</h4>
-      <div class="size">
-        <div class="pizza-size">
-          <label>
-            <div id="personal"><p>$10</p></div>
-            <input type="radio" name="size" value= 10>
-          </label>
+      <div class="order-body">
+        <h4>First, select a size...</h4>
+        <div class="size">
+          <div class="pizza-size">
+            <label>
+              <div id="personal"><p>$10</p></div>
+              <input type="radio" name="size" value= 10>
+            </label>
+          </div>
+          <div class="pizza-size">
+            <label>
+              <div id="medium"><p>$14</p></div>
+              <input type="radio" name="size" value= 14>
+            </label>
+          </div>
+          <div class="pizza-size">
+            <label>
+              <div  id="large"><p>$16</p></div>
+              <input type="radio" name="size" value= 16>
+            </label>
+          </div>
+          <div class="pizza-size">
+            <label>
+              <div  id="x-large"><p>$20</p></div>
+              <input type="radio" name="size" value= 20>
+            </label>
+          </div>
         </div>
-        <div class="pizza-size">
-          <label>
-            <div id="medium"><p>$14</p></div>
-            <input type="radio" name="size" value= 14>
+        <div class="toppings">
+          <h4 id="toppings">Next, choose your toppings...</h4>
+          <h5>Sauce</h5>
+          <label class="radio-inline">
+            <input type="radio" name="sauce" id="tomato" value=0> Tomato
           </label>
+          <label class="radio-inline">
+            <input type="radio" name="sauce" id="pesto" value=1> Pesto (+$1)
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="sauce" id="oil" value=0> Garlic Olive Oil
+          </label>
+          <h5>Meat - $2 per selection</h5>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="meat" id="pepperoni" value=2> Pepperoni
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="meat" id="canadian-bacon" value=2> Canadian Bacon
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="meat" id="sausage" value=2> Sausage
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="meat" id="chicken" value=2> Chicken
+          </label>
+          <h5>Veggies - $1 per selection</h5>
+          <div class="veggie-selections">
+            <label class="checkbox-inline">
+              <input type="checkbox" name="veggie" id="olive" value=1> Black Olives
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="veggie" id="onion" value=1> Caramelized Onions
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="veggie" id="pepper" value=1> Roasted Red Peppers
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="veggie" id="mushroom" value=1> Mushrooms
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="veggie" id="arugala" value=1> Fresh Arugala
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="veggie" id="pineapple" value=1> Pineapple
+            </label><br>
+          </div>
+          <button id="order" type="button" name="button">Place Order</button>
         </div>
-        <div class="pizza-size">
-          <label>
-            <div  id="large"><p>$16</p></div>
-            <input type="radio" name="size" value= 16>
-          </label>
-        </div>
-        <div class="pizza-size">
-          <label>
-            <div  id="x-large"><p>$20</p></div>
-            <input type="radio" name="size" value= 20>
-          </label>
+        <div class="total">
+          <p>Your total for this order will be: <span id="price">$<span id="total-price"></span>.00</span></p>
         </div>
       </div>
-      <div class="toppings">
-        <h4>Next, choose your toppings...</h4>
-        <h5>Sauce</h5>
-        <label class="radio-inline">
-          <input type="radio" name="sauce" id="tomato" value=0> Tomato
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="sauce" id="pesto" value=1> Pesto (+$1)
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="sauce" id="oil" value=0> Garlic Olive Oil
-        </label>
-        <h5>Meat - $2 per selection</h5>
-        <label class="checkbox-inline">
-          <input type="checkbox" name="meat" id="pepperoni" value=2> Pepperoni
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" name="meat" id="canadian-bacon" value=2> Canadian Bacon
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" name="meat" id="sausage" value=2> Sausage
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" name="meat" id="chicken" value=2> Chicken
-        </label>
-        <h5>Veggies - $1 per selection</h5>
-        <label class="checkbox-inline">
-          <input type="checkbox" name="veggie" id="olive" value=1> Black Olives
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" name="veggie" id="onion" value=1> Caramelized Onions
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" name="veggie" id="pepper" value=1> Roasted Red Peppers
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" name="veggie" id="mushroom" value=1> Mushrooms
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" name="veggie" id="arugala" value=1> Fresh Arugala
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" name="veggie" id="pineapple" value=1> Pineapple
-        </label><br>
-        <button id="order" type="button" name="button">Place Order</button>
-      </div>
-      <div class="total">
-        <p>Your total for this order will be: $<span id="total-price"></span>.00</p>
-      </div>
-    </div>
   </body>
 </html>
