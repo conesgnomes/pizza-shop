@@ -12,18 +12,18 @@ _This site allows the user to select various pizza toppings as well as a size of
 
 Specifications:
 
--The application provides users an list of various pizza toppings to choose from
-  -Input: pepperoni, olives, bell pepper, feta, etc.
-  -Output: pepperoni, olives
--Each pizza topping corresponds to a specific price
-  -Input: pepperoni
-  -Output: $2.00
 -The application allows users to select a size of pizza
   -Input: personal, medium, large, extra large
   -Output: medium
 -Each size of pizza corresponds to a specific base price
   -Input: medium
   -Output: $16.00
+-The application provides users an list of various pizza toppings to choose from
+  -Input: pepperoni, olives, bell pepper, feta, etc.
+  -Output: pepperoni, olives
+-Each pizza topping corresponds to a specific price
+  -Input: pepperoni
+  -Output: $2.00
 -Based on the number of toppings and size of pizza, users will be charged a specific price for their pizza
   -Input: medium; pepperoni, olives
   -Output: $20.00
