@@ -8,6 +8,8 @@
 
 _This site allows the user to select various pizza toppings as well as a size of pizza they would like to order and it will return the price for the pizza._
 
+_Check out the site on GitHub Pages: https://conesgnomes.github.io/pizza-shop/ _
+
 ## Specifications
 
 Specifications:
